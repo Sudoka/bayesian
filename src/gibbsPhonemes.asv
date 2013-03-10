@@ -1,0 +1,30 @@
+function output = gibbsPhonemes (data, categories)
+  % priors
+  %p_c = sample_dirichlet(10, 10, categories);
+  
+  % init each speech sound randomly
+  for i = 1:600
+    % for each speech sound in data set
+    for sound = size(data, 1)
+      % for each category
+      for category = numel(categories)
+        % calculate p(c | w_ij) = p(w_ij | c) * p(c)
+        p_c 
+      end
+      % resample category c
+    end
+  end
+end
+
+function output = sample_dirichlet(alpha, beta, N)
+% SAMPLE_DIRICHLET Sample N vectors from Dir(alpha(1), ..., alpha(k))
+% p. 482 of "Bayesian Data Analysis", Gelman et al.
+
+k = length(alpha);
+output = zeros(N, k);
+for i=1:k
+  output(:,i) = gamrnd(alpha(i), beta, N, 1);
+end
+
+S = sum(theta,2); 
+output = output ./ repmat(S, 1, k);
