@@ -40,7 +40,7 @@ function output = gibbsPhonemes (data, categories)
         % add it to the conditional dist
       end
       % prior of new category
-      prior_newk = alpha / (numData + alpha);
+      % prior_newk = alpha / (numData + alpha);
       
       % add it to the conditional dist
       
