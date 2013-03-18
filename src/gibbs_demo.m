@@ -14,14 +14,14 @@ dd = 2; % dims
 KK = 1; % num clusters
 %trueK = 5;
 NN = 1668; % numData
-aa = 1; % alpha = 1
+aa = 15; % alpha = 1
 s0 = 3;
 ss = 1;
-numiter = 600;
+numiter = 800;
 
 hh.dd = dd;
 hh.ss = s0^2/ss^2;
-hh.vv = 3; % 5; 1.001
+hh.vv = 1.001; % 5; 1.001
 hh.VV = [1 0;0 1];
 hh.uu = [500; 1500];
 
